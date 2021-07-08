@@ -1,0 +1,286 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  body {
+   background-image: url("https://picsum.photos/seed/2200/2500?grayscale");
+    font-family: fantasy;
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.5;
+    color: black
+  }
+  
+
+  
+  header {
+    border-radius: 20px;
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(116, 116, 138);
+    box-shadow: 0 5px 35px grey
+  }
+  
+  header h1 {
+    border-radius: 20px;
+  color: aqua;
+  background-color: black;
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  nav {
+    background-color: slategray;
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    border-radius: 15px 15px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+  
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color:mediumseagreen
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    margin-top: 80px;
+    margin-bottom: 45px;
+  }
+  
+  .hero-banner { 
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    padding: 2% 6%;
+    min-height: 30vh;
+  }
+  
+ 
+  .hero-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .hero-banner h2 {
+    border-radius: 20px;
+    margin: 0;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+     margin: 10;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+    background-color: rgb(93, 92, 97);
+    color: black
+  
+  }
+  
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: center;
+    border-right-color: cadetblue;
+    border-right: 10px solid;
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+  
+  .page-section p {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    margin-bottom: 60px;
+  }
+  
+  .flex-container {
+    border-bottom-right-radius: 50px;
+    border-top-style: double;
+    background-position: right;
+    color: rgb(0, 0, 0);
+    page-break-after: auto;
+   display: block;
+    flex-wrap: wrap-reverse;
+   justify-content: flex-end;
+  }
+  
+  .flex-item {
+ 
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+   align-items: center;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+    border: 10px solid;
+    
+  }
+  
+  .flex-item:first-child {
+      min-height: 600px;
+      flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color:whitesmoke
+  }
+  
+  .flex-item div {
+
+
+    padding: 15px, 35px;
+ 
+  }
+    
+  .flex-item:hover{
+    background-size: 100% 88%;
+    color: teal;
+  }
+  
+  .flex-item h3 {
+    border-radius: 20px;
+   
+    font-size: 1.6rem;
+  }
+  
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact address a {
+    font-size: 1.3rem;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    padding: 5px;
+    display: inline-flex;
+    color:rgb(19, 12, 12)
+   
+  }
+  
+  .contact address a:hover {
+    background-size: 100% 88%;
+    color: rgb(26, 175, 93)
+  }
+  
+  .stuff {
+    background-image: url("https://picsum.photos/seed/picsum/200/800");
+  }
+  
+  .more-stuff {
+    background-image: url("https://picsum.photos/200");
+  }
+  
+  .stuff {
+    background-image: url("https://picsum.photos/200");
+  }
+
+  
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h3,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h3 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
